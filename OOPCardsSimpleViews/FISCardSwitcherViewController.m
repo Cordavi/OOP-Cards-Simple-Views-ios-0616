@@ -4,6 +4,10 @@
 
 @interface FISCardSwitcherViewController ()
 
+@property (strong, nonatomic)IBOutlet UILabel *topLabel;
+@property (strong, nonatomic)IBOutlet UILabel *middleLabel;
+@property (strong, nonatomic)IBOutlet UILabel *bottomLabel;
+
 @end
 
 @implementation FISCardSwitcherViewController
@@ -22,4 +26,22 @@
                                                 rank:@"10"];
 }
 
+- (void)setLabelText:(NSString *)text {
+    self.topLabel.text = text;
+    self.middleLabel.text = text;
+    self.bottomLabel.text = text;
+}
+
+- (IBAction)playThreeOfSpades:(id)sender {
+    [self setLabelText:self.threeOfSpades.cardLabel];
+}
+- (IBAction)playFourOfClubs:(id)sender {
+    [self setLabelText:self.fourOfClubs.cardLabel];
+}
+- (IBAction)playEightOfDiamonds:(id)sender {
+    [self setLabelText:self.eightOfDiamonds.cardLabel];
+}
+- (IBAction)playTenOfHearts:(id)sender {
+    [self setLabelText:self.tenOfHearts.cardLabel];
+}
 @end
