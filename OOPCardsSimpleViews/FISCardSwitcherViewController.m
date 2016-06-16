@@ -4,9 +4,9 @@
 
 @interface FISCardSwitcherViewController ()
 
-@property (strong, nonatomic)IBOutlet UILabel *topLabel;
-@property (strong, nonatomic)IBOutlet UILabel *middleLabel;
-@property (strong, nonatomic)IBOutlet UILabel *bottomLabel;
+@property (weak, nonatomic)IBOutlet UILabel *topLabel;
+@property (weak, nonatomic)IBOutlet UILabel *middleLabel;
+@property (weak, nonatomic)IBOutlet UILabel *bottomLabel;
 
 @end
 

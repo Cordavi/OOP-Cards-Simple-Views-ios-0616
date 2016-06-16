@@ -71,12 +71,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bottomLabel" destination="Xvo-bJ-7JL" id="JbC-g4-VMA"/>
                         <outlet property="middleLabel" destination="QQq-wP-NuF" id="Yt9-qa-ht3"/>
+                        <outlet property="test" destination="9PN-31-6JD" id="YAh-Tu-qKY"/>
                         <outlet property="topLabel" destination="9PN-31-6JD" id="ENR-NK-2aG"/>
                     </connections>
                 </viewController>
