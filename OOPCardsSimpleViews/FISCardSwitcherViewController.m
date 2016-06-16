@@ -26,22 +26,22 @@
                                                 rank:@"10"];
 }
 
-- (void)setLabelText:(NSString *)text {
-    self.topLabel.text = text;
-    self.middleLabel.text = text;
-    self.bottomLabel.text = text;
+- (void)setLabelText:(FISCard *)text {
+    self.topLabel.text = text.cardLabel;
+    self.middleLabel.text = text.cardLabel;
+    self.bottomLabel.text = text.cardLabel;
 }
 
 - (IBAction)playThreeOfSpades:(id)sender {
-    [self setLabelText:self.threeOfSpades.cardLabel];
+    [self setLabelText:self.threeOfSpades];
 }
 - (IBAction)playFourOfClubs:(id)sender {
-    [self setLabelText:self.fourOfClubs.cardLabel];
+    [self setLabelText:self.fourOfClubs];
 }
 - (IBAction)playEightOfDiamonds:(id)sender {
-    [self setLabelText:self.eightOfDiamonds.cardLabel];
+    [self setLabelText:self.eightOfDiamonds];
 }
 - (IBAction)playTenOfHearts:(id)sender {
-    [self setLabelText:self.tenOfHearts.cardLabel];
+    [self setLabelText:self.tenOfHearts];
 }
 @end
